@@ -6,3 +6,5 @@ The game can be played through your web browser at students.mcneese.edu/msu-ghea
 Simply install the Unity Plugin and begin.
 
 If you have Unity and want to make some additions to the game simply Import the package file into your Unity.
+
+I threw in the web programming files. Has some HTML, CSS, and some JavaScript.
