@@ -1,0 +1,192 @@
+
+
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>Web Head Games</title>
+			
+		<link rel ="stylesheet" href="WebHead_Style.css">
+		
+		<meta name="author" content="Garrett Head @ WebHead Games">
+		<meta name="description" content="Web Head Games">
+		
+		
+		<script type='text/javascript' src='https://ssl-webplayer.unity3d.com/download_webplayer-3.x/3.0/uo/jquery.min.js'></script>
+		<script type="text/javascript">
+		<!--
+		var unityObjectUrl = "http://webplayer.unity3d.com/download_webplayer-3.x/3.0/uo/UnityObject2.js";
+		if (document.location.protocol == 'https:')
+			unityObjectUrl = unityObjectUrl.replace("http://", "https://ssl-");
+		document.write('<script type="text\/javascript" src="' + unityObjectUrl + '"><\/script>');
+		-->
+		</script>
+		<script type="text/javascript">
+		<!--
+			var config = {
+				width: 960, 
+				height: 600,
+				params: { enableDebugging:"0" }
+				
+			};
+			var u = new UnityObject2(config);
+
+			jQuery(function() {
+
+				var $missingScreen = jQuery("#unityPlayer").find(".missing");
+				var $brokenScreen = jQuery("#unityPlayer").find(".broken");
+				$missingScreen.hide();
+				$brokenScreen.hide();
+				
+				u.observeProgress(function (progress) {
+					switch(progress.pluginStatus) {
+						case "broken":
+							$brokenScreen.find("a").click(function (e) {
+								e.stopPropagation();
+								e.preventDefault();
+								u.installPlugin();
+								return false;
+							});
+							$brokenScreen.show();
+						break;
+						case "missing":
+							$missingScreen.find("a").click(function (e) {
+								e.stopPropagation();
+								e.preventDefault();
+								u.installPlugin();
+								return false;
+							});
+							$missingScreen.show();
+						break;
+						case "installed":
+							$missingScreen.remove();
+						break;
+						case "first":
+						break;
+					}
+				});
+				u.initPlugin(jQuery("#unityPlayer")[0], "Build.unity3d");
+			});
+		-->
+		</script>
+		<style type="text/css">
+		<!--
+		body {
+			font-family: Helvetica, Verdana, Arial, sans-serif;
+			background-color: white;
+			color: black;
+			text-align: center;
+		}
+		a:link, a:visited {
+			color: #000;
+		}
+		a:active, a:hover {
+			color: #666;
+		}
+		p.header {
+			font-size: small;
+		}
+		p.header span {
+			font-weight: bold;
+		}
+		p.footer {
+			font-size: x-small;
+		}
+		div.content {
+			margin: auto;
+			margin-top:10px;
+			width: 960px;
+		}
+		div.broken,
+		div.missing {
+			margin: auto;
+			position: relative;
+			top: 50%;
+			width: 193px;
+		}
+		div.broken a,
+		div.missing a {
+			height: 63px;
+			position: relative;
+			top: -31px;
+		}
+		div.broken img,
+		div.missing img {
+			border-width: 0px;
+		}
+		div.broken {
+			display: none;
+		}
+		div#unityPlayer {
+			cursor: default;
+			height: 600px;
+			width: 960px;
+		}
+		-->
+		</style>
+		
+	</head>
+	
+	
+	<body>
+		
+		<div class="WebPage">
+			
+			<header class = "Header">
+			<div id="Logo"><a href="http://students.mcneese.edu/msu-ghead/index.html"><img src="http://students.mcneese.edu/msu-ghead/WebHead_Bottle.png" alt="LOGO" width= "100" height= "80"></div>
+			<div id="CompanyName"><img src="WebHead.png" alt="CoName" width= "250" height= "80"></a></div> 
+				<div class="NavBar">
+					<nav >
+					<ul>
+						<li><a href="http://students.mcneese.edu/msu-ghead/WebHead_Games.html">Play Now!!!</a></li>						
+						<li><a href="#">Developed by: Garrett Head</a></li>
+						<li><a href="#">2014</a></li>
+						
+					</ul>
+							
+					</nav> <! End NavBar div>
+				
+				</div>
+				<div id="HeaderContact">
+				<a href="#"><img src="facebook_logo.png" alt="CoName" width= "60" height= "60"></a>
+				<a href="#"><img src="Twitter_logo_blue.png" alt="CoName"  width= "60" height= "60"></a>
+				<a href="#"><img src="GooglePlus-Logo.png" alt="CoName"  width= "60" height= "60"></a>
+				
+				</div>
+			</header>
+			<div class="Body"> 
+				<div id="Main">
+				<!-- UNITY PLAYER AREA--->
+				<p class="header"><span>Unity Web Player | </span>HordesOnHoliday</p>
+				<div class="content">
+					<div id="unityPlayer">
+						<div class="missing">
+							<a href="http://unity3d.com/webplayer/" title="Unity Web Player. Install now!">
+								<img alt="Unity Web Player. Install now!" src="http://webplayer.unity3d.com/installation/getunity.png" width="193" height="63" />
+							</a>
+						</div>
+						<div class="broken">
+							<a href="http://unity3d.com/webplayer/" title="Unity Web Player. Install now! Restart your browser after install.">
+								<img alt="Unity Web Player. Install now! Restart your browser after install." src="http://webplayer.unity3d.com/installation/getunityrestart.png" width="193" height="63" />
+							</a>
+						</div>
+					</div>
+				</div>
+				<p class="footer">&laquo; created with <a href="http://unity3d.com/unity/" title="Go to unity3d.com">Unity</a> &raquo;</p>
+				<!-- UNITY PLAYER AREA--->
+					
+					
+				</div>
+			
+			
+			
+			</div> <!End Body div>
+			
+			<footer id = "Footer">
+				<div id="brand"><img src="WebHead_Bottle.png" alt="LOGO" width= "100" height= "100"></div>
+			</footer>
+			
+		</div> <! End Webpage div>
+		
+	</body>
+	
+</html>

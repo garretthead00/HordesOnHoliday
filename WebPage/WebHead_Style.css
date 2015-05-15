@@ -1,0 +1,290 @@
+
+
+header, section, footer, aside, nav, article, hgroup ,a{
+	display:block;
+	
+} 
+
+body{
+	
+	margin: 0px;
+	background-color:white;
+	display:-webkit-box;
+	-webkit-box-pack:center;
+	display:-moz-box;
+	-moz-box-pack:center;
+	
+}
+h1{
+	font: bold 24px Tahoma;
+	color:black;
+	text-align:center;
+
+}
+h2{
+	font: normal 18px Tahoma;
+	color:white;
+	text-align:center;
+}
+h3{
+	font: normal 18px Tahoma;
+	color:black;
+	text-align:center;
+}
+h5{
+	font: bold 14px Tahoma;
+	color:black;
+}
+h6{
+	font: bold 12px Tahoma;
+	color:white;
+}
+
+.WebPage{
+	
+	width: 100%;
+	height: 100%;
+	margin:0px;
+	padding:0px;
+	border: 1px solid clear;	
+	/** Chrome and Mozilla*/
+	display:-webkit-box;
+	display:-moz-box;
+	-webkit-box-orient:vertical;
+	-moz-box-orient:vertical;
+	
+	
+
+}
+
+.Header{
+
+	height:auto;
+	text-align:center;
+	margin:0px;
+	border: 1px solid clear;
+	box-shadow: 0px -2px 25px #080808 ;
+	/** Flexbox  Chrome*/
+	display:-webkit-box;
+	-webkit-box-orient:horizontal;	
+	/* Mozilla */
+	display:-moz-box;	
+	-moz-box-orient:horizontal;
+	background-color: white;
+	padding: 5px;
+	
+}
+
+#CompanyName {
+	border: 1px solid clear;
+	margin:0px;
+	height:auto;
+	display:-webkit-box;
+	-webkit-box-align:end;
+	-webkit-box-pack:center;
+	display:-moz-box;
+	-moz-box-align:center;
+	-moz-box-pack:center;
+
+}
+
+#Logo{
+	border: 1px solid clear;
+	margin:0px;
+	height:auto;
+	display:-webkit-box;
+	-webkit-box-align:center;
+	-webkit-box-pack:center;
+	display:-moz-box;
+	-moz-box-align:center;
+	-moz-box-pack:center;
+}
+#HeaderContact{
+	border: 1px solid clear;
+	height: auto;
+	display:-webkit-box;
+	-webkit-box-orient:horizontal;
+	display:-moz-box;
+	-moz-box-orient:horizontal;
+	margin:5px;
+	font:  normal 14px tahoma;
+	color:black;
+	
+	
+
+}
+#HeaderContact a{
+
+	margin:5px 20px;
+}
+
+#HeaderContact a:hover {
+	opacity:0.5;
+	
+}
+
+.NavBar{
+	
+
+	border: 1px solid clear;
+	margin:0px;
+	height:auto;
+	/* Mozilla Firefox */ 
+	display:-moz-box;
+	-moz-box-align:center;
+	-moz-box-pack:center;
+	/* Webkit (Chrome 11+) */
+	display:-webkit-box;
+	-webkit-box-align:center;
+	-webkit-box-pack:center;
+
+
+}
+.NavBar ul{
+
+	
+	list-style-type:none;
+	padding:0px;
+	margin:0px;
+	border: 1px solid clear;	
+	display:-webkit-box;
+	-webkit-box-orient:horizontal;
+	display:-moz-box;
+	-moz-box-orient:horizontal;
+
+
+	
+}
+
+.NavBar ul li{
+	
+	position:relative;
+	border: 1px solid clear;	
+	width:225px;
+	border-right:1px solid black;
+	height: 40px;	
+	padding: 0px 0px; /** 10px top/bottom & 20px left/right **/
+	margin:0px;
+	/* Mozilla Firefox */ 
+	display:-moz-box;
+	-moz-box-align:center;
+	-moz-box-pack:center;
+	/* Webkit (Chrome 11+) */
+	display:-webkit-box;
+	-webkit-box-align:center;
+	-webkit-box-pack:center;
+}
+
+.NavBar ul li:hover a{
+	
+	color:#FF5C00;
+}
+
+
+
+
+.NavBar a{
+	
+	font: normal 16px Tahoma;
+	color:black;
+	margin:0px;
+	border: 1px solid clear;
+	width:100%;
+	height:40px;
+	padding: 0px;
+	text-decoration:none;
+	/* Mozilla Firefox */ 
+	display:-moz-box;
+	-moz-box-align:center;
+	-moz-box-pack:center;
+	/* Webkit (Chrome 11+) */
+	display:-webkit-box;
+	-webkit-box-align:center;
+	-webkit-box-pack:center;
+		
+}
+
+
+.Body{
+	border:1px solid clear;	
+	height:auto;
+	margin: 2px 0px 0px 0px; /* Gives the top border a little space to shade the border between the header and body */
+	display:-webkit-box;
+	-webkit-box-pack:center;
+	-webkit-box-orient:horizontal;
+	display:-moz-box;
+	-moz-box-orient:horizontal;	
+	-moz-box-pack:center;
+	-moz-box-flex:1;
+	z-index:-1;
+
+}
+
+
+ .Body #Main{
+ 
+	border: 1px solid clear;
+	margin:10px 0px 10px 0px;
+	width:90%;
+	height: auto;
+	box-shadow: 0px 0px 40px #080808;
+	display:-webkit-box;
+	-webkit-box-ordinal-group: 1;
+	-webkit-box-orient:vertical;
+	-webkit-box-pack:center;
+	display:-moz-box;
+	-moz-box-ordinal-group: 1;
+	-moz-box-orient:vertical;
+	-moz-box-pack:center;
+	
+	
+	
+	}
+
+
+.Body #box{
+	border:1px solid clear;
+	width:95%;
+	margin: 0px;
+	display:-webkit-box;
+	-webkit-box-pack:center;
+	-webkit-box-orient:horizontal;
+	display:-moz-box;
+	-moz-box-pack:center;
+	-moz-box-orient:horizontal;
+	-webkit-box-flex:1;
+	-moz-box-flex:1;
+	
+
+}
+
+#Footer{
+	border: 1px solid clear;
+	height: auto;
+	margin:0px;
+	background-color:#080808;
+	color:white;
+	display:-webkit-box;
+	-webkit-box-pack:center;
+	-webkit-box-align:end;
+	display:-moz-box;
+	-moz-box-pack:center;
+	-moz-box-align:end;	
+}
+
+#brand{
+
+	border:1px solid clear;
+	margin:5px;
+	border-top: 1px solid clear;
+	padding: 0px 5px;	
+	display:-webkit-box;
+	-webkit-box-pack:center;
+	-webkit-box-orient:horizontal;	
+	-webkit-box-align:end;	
+	display:-moz-box;
+	-moz-box-pack:center;
+	-moz-box-orient:horizontal;
+	-moz-box-align:end;	
+
+}
